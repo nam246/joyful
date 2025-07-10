@@ -25,7 +25,7 @@ export default function Header() {
 						</Link>
 						<Link
 							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"/products"}
+							href={"#products"}
 						>
 							products
 						</Link>
@@ -37,7 +37,7 @@ export default function Header() {
 						</Link>
 						<Link
 							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"/posts"}
+							href={"#contact"}
 						>
 							contact
 						</Link>

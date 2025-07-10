@@ -5,11 +5,11 @@ import AboutSection from "./components/AboutSection";
 export default function Home() {
 	return (
 		<div className="container mx-auto">
-			<section>
+			<section id="product-categories">
 				<ProductCategoriesSection />
 			</section>
 
-			<section>
+			<section id="products">
 				<ProductsSection />
 			</section>
 

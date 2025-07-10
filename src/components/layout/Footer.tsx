@@ -29,7 +29,7 @@ export default function Footer() {
 							</ul>
 						</div>
 
-						<div>
+						<div id="contact">
 							<h3 className="font-bold text-white text-2xl uppercase mb-5">
 								contact us
 							</h3>
