@@ -1,4 +1,4 @@
-import ProductCategoriesSection from "./components/GallerySection";
+import Gallery from "./components/GallerySection";
 import ProductsSection from "./components/ProductsSection/index";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
@@ -8,7 +8,7 @@ export default function Home() {
 		<>
 			<section id="product-categories">
 				<div className="container mx-auto">
-					<ProductCategoriesSection />
+					<Gallery />
 				</div>
 			</section>
 

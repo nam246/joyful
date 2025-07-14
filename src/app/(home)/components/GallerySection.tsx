@@ -9,7 +9,7 @@ export type Gallery = {
 	url: string;
 };
 
-const galleries = [
+const images: Gallery[] = [
 	{
 		src: "/product-categories/cat1.jpg",
 		name: "PU",
@@ -42,9 +42,9 @@ export default function GallerySection() {
 		<FadeUp className="pt-5">
 			<SectionHeading title="gallery" />
 			<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-rows-2 gap-5">
-				{galleries.map((gallery, index) => (
+				{images.map((image, index) => (
 					<div key={index} className={`${index == 1 ? "col-span-2" : "col-span-1"}`}>
-						<GalleryItem src={gallery.src} name={gallery.name} url={gallery.url} />
+						<GalleryItem src={image.src} name={image.name} url={image.url} />
 					</div>
 				))}
 			</div>
