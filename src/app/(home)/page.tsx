@@ -1,21 +1,34 @@
-import ProductCategoriesSection from "./components/ProductCategoriesSection";
+import ProductCategoriesSection from "./components/GallerySection";
 import ProductsSection from "./components/ProductsSection/index";
 import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
 	return (
-		<div className="container mx-auto">
+		<>
 			<section id="product-categories">
-				<ProductCategoriesSection />
+				<div className="container mx-auto">
+					<ProductCategoriesSection />
+				</div>
 			</section>
 
 			<section id="products">
-				<ProductsSection />
+				<div className="container mx-auto">
+					<ProductsSection />
+				</div>
 			</section>
 
-			<section id="about">
-				<AboutSection />
+			<section id="about" className="bg-white">
+				<div className="container mx-auto">
+					<AboutSection />
+				</div>
 			</section>
-		</div>
+
+			<section id="contact">
+				<div className="container mx-auto">
+					<ContactSection />
+				</div>
+			</section>
+		</>
 	);
 }

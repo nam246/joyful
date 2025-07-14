@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<header className="fixed top-0 z-[999] w-full backdrop-blur bg-white/30">
+		<header className="fixed top-0 z-[999] w-full bg-white/10">
 			<div className="header-wrapper container mx-auto">
 				<div className="grid grid-cols-3 items-center">
 					<div className="logo flex gap-5 justify-self-start">

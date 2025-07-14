@@ -1,25 +1,31 @@
 import Image from "next/image";
-import Link from "next/link";
+import { WC_Product } from "@/types/types";
 
-import { Product } from "@/types/types";
-
-const ProductItem = ({ product }: { product: Product }) => (
-	<Link className="group block" href={"/"}>
-		<figure className="overflow-hidden h-[289px]">
-			<Image
-				className="transition-transform duration-300 group-hover:scale-110"
-				src={product.src}
-				alt={product.name}
-				width="500"
-				height="500"
-			/>
-			<figcaption className="absolute bottom-0 left-0 bg-gray-200/50">
-				<h3 className="uppercase font-bold transition-colors group-hover:text-blue-900 p-2">
-					{product.name}
-				</h3>
-			</figcaption>
-		</figure>
-	</Link>
+const ProductItem = ({
+	product,
+	onClick,
+}: {
+	product: WC_Product;
+	onClick: (event: React.MouseEvent<HTMLElement>) => void;
+}) => (
+	<>
+		<div className="group block cursor-pointer" onClick={onClick}>
+			<figure className="overflow-hidden h-[289px]">
+				<Image
+					className="transition-transform w-full h-full object-cover duration-300 group-hover:scale-110"
+					src={product.images?.[0]?.src}
+					alt={product.name}
+					width="500"
+					height="500"
+				/>
+				<figcaption className="absolute bottom-0 left-0 bg-gray-200/20 group-hover:bg-blue-900/50 transition-all">
+					<h3 className="uppercase font-bold transition-colors text-slate-800 group-hover:text-white p-2">
+						{product.name}
+					</h3>
+				</figcaption>
+			</figure>
+		</div>
+	</>
 );
 
 export default ProductItem;

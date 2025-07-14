@@ -29,6 +29,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+@media (max-width: 600px) {
+	.container {
+		padding: 0 8px;
+	}
+}
+
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 	opacity: 0;

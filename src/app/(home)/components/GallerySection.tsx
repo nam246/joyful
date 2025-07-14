@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/animation/FadeUp";
-import { ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/layout/SectionHeading";
 
-const productCategories = [
+export type Gallery = {
+	src: string;
+	name: string;
+	url: string;
+};
+
+const galleries = [
 	{
 		src: "/product-categories/cat1.jpg",
 		name: "PU",
@@ -32,14 +37,14 @@ const productCategories = [
 	},
 ];
 
-export default function ProductCategoriesSection() {
+export default function GallerySection() {
 	return (
 		<FadeUp className="pt-5">
-			<SectionHeading title="product categories" />
+			<SectionHeading title="gallery" />
 			<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-rows-2 gap-5">
-				{productCategories.map((cat, index) => (
+				{galleries.map((gallery, index) => (
 					<div key={index} className={`${index == 1 ? "col-span-2" : "col-span-1"}`}>
-						<CategoryItem src={cat.src} name={cat.name} url={cat.url} />
+						<GalleryItem src={gallery.src} name={gallery.name} url={gallery.url} />
 					</div>
 				))}
 			</div>
@@ -47,7 +52,7 @@ export default function ProductCategoriesSection() {
 	);
 }
 
-const CategoryItem = ({
+const GalleryItem = ({
 	src,
 	name,
 	url,
@@ -69,8 +74,5 @@ const CategoryItem = ({
 				{name}
 			</figcaption>
 		</figure>
-		<div className="absolute bottom-5 left-5 text-white group-hover:translate-x-1 transition-transform group-hover:text-blue-900">
-			View all <ArrowRight className="inline" />
-		</div>
 	</Link>
 );

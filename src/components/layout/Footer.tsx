@@ -1,12 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Building, Mail, MapPin, Phone } from "lucide-react";
 import FadeUp from "@/components/animation/FadeUp";
 
 export default function Footer() {
 	return (
 		<FadeUp>
-			<footer className="py-10 mt-5 bg-slate-900">
+			<footer className="py-10 mt-5 bg-slate-800">
 				<div className="container mx-auto">
 					<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-5">
 						<div>
@@ -15,24 +14,22 @@ export default function Footer() {
 							</h3>
 							<ul>
 								<li className="text-white mb-3 hover:text-blue-900">
-									<Link href={"/"}>About us</Link>
+									<Link href={"#about"}>About us</Link>
 								</li>
 								<li className="text-white mb-3 hover:text-blue-900">
-									<Link href={"/"}>Products</Link>
+									<Link href={"#products"}>Products</Link>
 								</li>
 								<li className="text-white mb-3 hover:text-blue-900">
 									<Link href={"/"}>Youtube</Link>
 								</li>
 								<li className="text-white mb-3 hover:text-blue-900">
-									<Link href={"/"}>Contact</Link>
+									<Link href={"#contact"}>Contact</Link>
 								</li>
 							</ul>
 						</div>
 
-						<div id="contact">
-							<h3 className="font-bold text-white text-2xl uppercase mb-5">
-								contact us
-							</h3>
+						<div>
+							<h3 className="font-bold text-white text-2xl uppercase mb-5">company</h3>
 							<div>
 								<p className="text-white mb-3">
 									<Building className="inline mr-2" />
@@ -60,62 +57,26 @@ export default function Footer() {
 						</div>
 
 						<div>
-							<h3 className="font-bold text-white text-2xl uppercase mb-5">socials</h3>
+							<h3 className="font-bold text-white text-2xl uppercase mb-5">
+								newsletter
+							</h3>
 							<p className="text-white mb-3">
-								You are welcome to us for more details if any decor paper could interest
-								you. Please contact by mail or phone call, and we will reply you soon.
+								Stay updated! Join our newsletter for exclusive tips and insights.
 							</p>
-							<form
-								action=""
-								className="bg-white grid grid-cols-8 rounded-md mb-5 w-[80%]"
-							>
+							<form action="" className="grid grid-cols-8 gap-2 rounded-md mb-5">
 								<input
-									type="text"
-									className="col-span-6 p-5 outline-0"
+									type="email"
+									className="col-span-6 p-5 outline-0 bg-white rounded-md"
 									placeholder="ex: youremail@domain.com"
 								/>
-								<button className="col-span-2 p-5 hover:bg-blue-300 hover:text-white font-bold transition-all cursor-pointer rounded-md">
+								<button className="col-span-2 p-5 bg-blue-500 hover:bg-blue-300 text-white font-bold transition-all cursor-pointer rounded-md">
 									Submit
 								</button>
 							</form>
-							<div className="flex gap-2">
-								<Link href={`/`}>
-									<Image
-										src="/icons/facebook.png"
-										width="35"
-										height="35"
-										alt="facebook icon"
-									/>
-								</Link>
-								<Link href={`/`}>
-									<Image
-										src="/icons/Icon_of_Zalo.svg.webp"
-										width="35"
-										height="35"
-										alt="zalo icon"
-									/>
-								</Link>
-								<Link href={`/`}>
-									<Image
-										src="/icons/youtube.png"
-										width="35"
-										height="35"
-										alt="youtube icon"
-									/>
-								</Link>
-								<Link href={`/`}>
-									<Image
-										src="/icons/tiktok.png"
-										width="35"
-										height="50"
-										alt="tiktok icon"
-									/>
-								</Link>
-							</div>
 						</div>
 					</div>
 				</div>
-				<div className="container mx-auto border-t-white border my-5">
+				<div className="container mx-auto my-5">
 					<p className="text-white text-center py-2">
 						© 2025 Joyful decor. All rights reserved.
 					</p>
