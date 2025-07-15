@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -14,30 +13,9 @@ export default function ProductsSwiperGrid({
 }: {
 	products: WC_Product[];
 }) {
-	const filters = [
-		"Vân gỗ cao cấp",
-		"Vân đơn sắc",
-		"Vân bóng mờ",
-		"Vân đá cẩm thạch",
-		"Vân vải",
-		"Vân bê tông",
-		"Vân kim loại",
-		"Vân tráng gương",
-	];
-
 	const [selectedItem, setSelectedItem] = useState<WC_Product | null>(null);
 	return (
 		<>
-			<ul className="flex flex-wrap gap-5 mb-5">
-				{filters.map((filter, index) => (
-					<li
-						key={index}
-						className="rounded-md bg-white text-gray-600 w-fit p-2 cursor-pointer hover:bg-blue-900 hover:text-white transition-all"
-					>
-						{filter}
-					</li>
-				))}
-			</ul>
 			<Swiper
 				slidesPerView={1} // Mặc định 1 slide trên mobile
 				grid={{

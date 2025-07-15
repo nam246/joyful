@@ -48,8 +48,8 @@ export default function SwiperSlider() {
 			// scrollbar={{ draggable: true }}
 			loop
 			autoplay={{ delay: 5000 }}
-			onSwiper={(swiper) => console.log(swiper)}
-			onSlideChange={() => console.log("slide change")}
+			// onSwiper={(swiper) => console.log(swiper)}
+			// onSlideChange={() => console.log("slide change")}
 			effect={"fade"}
 		>
 			{sliders.map((slider, index) => (

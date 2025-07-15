@@ -1,9 +1,9 @@
 import Gallery from "./components/GallerySection";
-import ProductsSection from "./components/ProductsSection/index";
+import ProductsSection from "./components/ProductsSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 
-export default function Home() {
+export default async function Home() {
 	return (
 		<>
 			<section id="product-categories">
@@ -14,7 +14,13 @@ export default function Home() {
 
 			<section id="products">
 				<div className="container mx-auto">
-					<ProductsSection />
+					<ProductsSection title="Paper Products" catID={"172"} />
+				</div>
+			</section>
+
+			<section id="products">
+				<div className="container mx-auto">
+					<ProductsSection title="PVC Products" catID={"166"} />
 				</div>
 			</section>
 
