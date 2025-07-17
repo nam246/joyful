@@ -49,14 +49,6 @@ export default function ContactSection() {
 							alt="instagram icon"
 						/>
 					</Link>
-					<Link href={`/`}>
-						<Image
-							src="/icons/linkedin.svg"
-							width="50"
-							height="50"
-							alt="linkedin icon"
-						/>
-					</Link>
 				</div>
 			</div>
 		</FadeUp>

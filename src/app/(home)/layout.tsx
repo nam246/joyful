@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MobileFooter from "@/components/layout/MobileFooter";
 import SwiperSlider from "@/components/layout/SwiperSlider";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function HomeLayout({
 				<SwiperSlider />
 				{children}
 			</main>
+			<MobileFooter />
 			<Footer />
 		</>
 	);

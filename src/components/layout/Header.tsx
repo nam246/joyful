@@ -16,7 +16,7 @@ export default function Header() {
 							Joyful - Where Creativity Comes to Life
 						</div>
 					</div>
-					<div className="flex items-center text-uppercase font-bold justify-self-end">
+					<nav className="flex items-center text-uppercase font-bold justify-self-end">
 						<Link
 							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
 							href={"#about"}
@@ -41,7 +41,7 @@ export default function Header() {
 						>
 							contact
 						</Link>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</header>

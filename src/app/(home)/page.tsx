@@ -18,7 +18,7 @@ export default async function Home() {
 				</div>
 			</section>
 
-			<section id="products">
+			<section>
 				<div className="container mx-auto">
 					<ProductsSection title="PVC Products" catID={"166"} />
 				</div>

@@ -29,12 +29,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-@media (max-width: 600px) {
-	.container {
-		padding: 0 8px;
-	}
-}
-
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 	opacity: 0;
@@ -60,6 +54,24 @@ body {
 .swiper:hover .swiper-button-next,
 .swiper:hover .swiper-button-prev {
 	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 0 8px;
+	}
+
+	.swiper {
+		height: 300px;
+	}
+
+	.slogan {
+		display: none;
+	}
+
+	nav {
+		grid-column: 2/ -1;
+	}
 }
 
 /* HTML: <div class="loader"></div> */

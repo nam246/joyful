@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import { Grid, Pagination } from "swiper/modules";
+import { Autoplay, Grid, Pagination } from "swiper/modules";
 import { WC_Product } from "@/types/types";
 import ProductItem from "./ProductItem";
 import Popup from "./Popup";
@@ -53,7 +53,8 @@ export default function ProductsSwiperGrid({
 						},
 					},
 				}}
-				modules={[Grid, Pagination]}
+				autoplay={{ delay: 5000 }}
+				modules={[Grid, Pagination, Autoplay]}
 			>
 				{products.map((product, index) => (
 					<SwiperSlide key={index}>
