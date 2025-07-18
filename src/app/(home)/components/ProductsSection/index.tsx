@@ -32,14 +32,14 @@ export default function ProductsSection({
 		const getProducts = async (catID: string, attrTerm: string) => {
 			setLoading(true);
 			try {
-				console.log("Fetching with:", { catID, attrTerm });
+				// console.log("Fetching with:", { catID, attrTerm });
 				const data = await getProductsByCategoryID(catID, attrTerm);
-				console.log("Received data:", data);
+				// console.log("Received data:", data);
 				setProducts(data);
 				setLoading(false);
 			} catch (error) {
 				setError(true);
-				console.log("Error:", error);
+				// console.log("Error:", error);
 			}
 		};
 

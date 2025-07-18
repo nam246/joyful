@@ -43,7 +43,7 @@ export default function Footer() {
 								</p>
 								<p className="text-white mb-3">
 									<Mail className="inline mr-2" />
-									<Link href={`tel:im.export02@joyfuldecor.com.vn`}>
+									<Link href={`mailto:im.export02@joyfuldecor.com.vn`}>
 										Mail: im.export02@joyfuldecor.com.vn
 									</Link>
 								</p>
