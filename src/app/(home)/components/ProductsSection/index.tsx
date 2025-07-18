@@ -44,7 +44,7 @@ export default function ProductsSection({
 		};
 
 		getProducts(catID, filter);
-	}, [filter, catID]);
+	}, [filter]);
 
 	const Loading = (
 		<div className="flex justify-center py-5">

@@ -20,8 +20,8 @@ export const getProductsByCategoryID = async (
 			status: "publish",
 		});
 		return response.data;
-	} catch (error: any) {
-		console.error("Error fetching products:", error.response?.data || error);
+	} catch (error) {
+		console.error("Error fetching products");
 		return [];
 	}
 };
