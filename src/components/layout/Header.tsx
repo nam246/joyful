@@ -18,25 +18,25 @@ export default function Header() {
 					</div>
 					<nav className="flex items-center text-uppercase font-bold justify-self-end">
 						<Link
-							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
+							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
 							href={"#about"}
 						>
 							about us
 						</Link>
 						<Link
-							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
+							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
 							href={"#products"}
 						>
 							products
 						</Link>
 						<Link
-							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
+							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
 							href={"/"}
 						>
 							youtube
 						</Link>
 						<Link
-							className="p-2 text-white text-sm transition duration-300 uppercase hover:text-blue-900"
+							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
 							href={"#contact"}
 						>
 							contact

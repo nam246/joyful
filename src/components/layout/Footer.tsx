@@ -20,7 +20,9 @@ export default function Footer() {
 									<Link href={"#products"}>Products</Link>
 								</li>
 								<li className="text-white mb-3 hover:text-blue-900">
-									<Link href={"/"}>Youtube</Link>
+									<Link href={"https://www.youtube.com/@congtyJOYFUL"} target="_blank">
+										Youtube
+									</Link>
 								</li>
 								<li className="text-white mb-3 hover:text-blue-900">
 									<Link href={"#contact"}>Contact</Link>

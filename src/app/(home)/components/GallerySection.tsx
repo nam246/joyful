@@ -72,7 +72,7 @@ const GalleryItem = ({ src, name }: { src: string; name: string }) => (
 				width={800}
 				height={500}
 			/>
-			<figcaption className="absolute top-5 left-5 text-white text-2xl group-hover:text-blue-900 uppercase font-bold">
+			<figcaption className="absolute top-5 left-5 text-white text-xl uppercase font-bold">
 				{name}
 			</figcaption>
 		</figure>

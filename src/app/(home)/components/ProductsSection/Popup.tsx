@@ -23,10 +23,18 @@ export default function Popup({ product }: { product: WC_Product }) {
 			></div>
 			<div className="mb-5 font-bold text-lg">Contact us</div>
 			<div className="flex items-center gap-5">
-				<Link className="bg-blue-900 text-white rounded-md px-5 py-2" href={`/`}>
+				<Link
+					target="_blank"
+					className="bg-blue-900 text-white rounded-md px-5 py-2"
+					href="https://zalo.me/0345939514"
+				>
 					Zalo
 				</Link>
-				<Link className="bg-blue-900 text-white rounded-md px-5 py-2" href={`/`}>
+				<Link
+					target="_blank"
+					className="bg-blue-900 text-white rounded-md px-5 py-2"
+					href="https://www.facebook.com/congtyJOYFUL"
+				>
 					Facebook
 				</Link>
 			</div>

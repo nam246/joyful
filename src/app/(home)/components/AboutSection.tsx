@@ -29,7 +29,8 @@ export default function AboutSection() {
 						paper surface such as AMC, PU, ​​​​SPU, PUS, SPU, MB, 3DMB, JP, JPS
 					</p>
 					<Link
-						href="/about"
+						href="https://www.facebook.com/congtyJOYFUL"
+						target="_blank"
 						className="block w-fit bg-blue-900 mt-10 px-5 py-2 rounded text-white uppercase hover:bg-blue-800 transition-all"
 					>
 						view more <ArrowRight className="inline" />

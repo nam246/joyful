@@ -7,19 +7,21 @@ const api = new WooCommerceRestApi({
 	version: "wc/v3",
 });
 
-export const getProductsByCategoryID = async (id: string, attrTerm: string) => {
+export const getProductsByCategoryID = async (
+	id: string,
+	attrTerm: string = "wood-grain"
+) => {
 	try {
 		const response = await api.get("products", {
 			category: id,
-			taxonomy: "pa_style",
-			attribute_term: attrTerm ? attrTerm : "wood-grain",
+			"attributes[0][taxonomy]": "pa_style",
+			"attributes[0][terms]": attrTerm,
 			per_page: 20,
 			status: "publish",
 		});
-		const data = await response.data;
-		return data;
-	} catch (error) {
-		console.error("Error fetching products:", error);
+		return response.data;
+	} catch (error: any) {
+		console.error("Error fetching products:", error.response?.data || error);
 		return [];
 	}
 };

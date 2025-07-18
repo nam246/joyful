@@ -14,7 +14,7 @@ export default function ContactSection() {
 					you. Please contact by contact below, and we will reply you soon.
 				</p>
 				<div className="flex gap-5">
-					<Link href={`/`}>
+					<Link target="_blank" href={`https://www.facebook.com/congtyJOYFUL`}>
 						<Image
 							src="/icons/facebook.svg"
 							width="50"
@@ -22,10 +22,10 @@ export default function ContactSection() {
 							alt="facebook icon"
 						/>
 					</Link>
-					<Link href={`/`}>
+					<Link target="_blank" href={`https://zalo.me/0345939514`}>
 						<Image src="/icons/zalo.svg" width="50" height="50" alt="zalo icon" />
 					</Link>
-					<Link href={`/`}>
+					<Link target="_blank" href={`https://www.youtube.com/@congtyJOYFUL`}>
 						<Image
 							src="/icons/youtube.svg"
 							width="50"
@@ -33,7 +33,7 @@ export default function ContactSection() {
 							alt="youtube icon"
 						/>
 					</Link>
-					<Link href={`/`}>
+					<Link target="_blank" href={`https://www.pinterest.com/joyfulvietnam/`}>
 						<Image
 							src="/icons/Tiktok_icon.svg"
 							width="50"
@@ -41,7 +41,7 @@ export default function ContactSection() {
 							alt="tiktok icon"
 						/>
 					</Link>
-					<Link href={`/`}>
+					<Link target="_blank" href={`https://www.instagram.com/joyfulvietnam/`}>
 						<Image
 							src="/icons/instagram.svg"
 							width="50"
