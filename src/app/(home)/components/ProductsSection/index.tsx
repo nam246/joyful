@@ -59,7 +59,7 @@ export default function ProductsSection({
 	return (
 		<FadeUp className="pt-5">
 			<SectionHeading title={title} />
-			<ul className="flex flex-wrap gap-5 mb-5">
+			<ul className="flex flex-wrap gap-2 mb-5">
 				{filters.map((item, index) => (
 					<li
 						key={index}

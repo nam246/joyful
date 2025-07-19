@@ -68,11 +68,11 @@ const GalleryItem = ({ src, name }: { src: string; name: string }) => (
 			<Image
 				className="w-full group-hover:scale-102 transition-transform duration-300"
 				src={src}
-				alt={name}
+				alt={`gallery ${name}`}
 				width={800}
 				height={500}
 			/>
-			<figcaption className="absolute top-5 left-5 text-white text-xl uppercase font-bold">
+			<figcaption className="absolute top-2 left-2 text-white text-sm uppercase font-bold">
 				{name}
 			</figcaption>
 		</figure>

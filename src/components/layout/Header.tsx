@@ -3,43 +3,50 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<header className="fixed top-0 z-[999] w-full bg-white/10">
-			<div className="header-wrapper container mx-auto">
-				<div className="grid grid-cols-3 items-center">
-					<div className="logo flex gap-5 justify-self-start">
-						<Link href={`/`}>
-							<Image src="/logo.png" width={80} height={80} alt="logo" />
+		<header className="fixed top-0 z-[999] w-full bg-white/30 backdrop-blur-md shadow-md">
+			<div className="container mx-auto px-4 py-2">
+				<div className="grid grid-cols-2 lg:grid-cols-3 items-center">
+					{/* Logo */}
+					<div className="flex items-center justify-start">
+						<Link href="/">
+							<Image src="/logo.png" width={64} height={64} alt="Joyful Logo" />
 						</Link>
 					</div>
-					<div className="slogan justify-self-center">
-						<div className="slogan-h2 text-blue-900 font-bold uppercase">
+
+					{/* Slogan */}
+					<div className="text-center hidden md:hidden lg:block">
+						<h2 className="text-blue-900 font-bold uppercase text-sm sm:text-base md:text-lg">
 							Joyful - Where Creativity Comes to Life
-						</div>
+						</h2>
 					</div>
-					<nav className="flex items-center text-uppercase font-bold justify-self-end">
+
+					{/* Navigation */}
+					<nav className="flex justify-end items-center gap-4">
 						<Link
-							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"#about"}
+							className="text-gray-700 text-sm font-semibold uppercase hover:text-blue-900 transition"
+							href="#about"
 						>
-							about us
+							About Us
 						</Link>
 						<Link
-							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"#products"}
+							className="text-gray-700 text-sm font-semibold uppercase hover:text-blue-900 transition"
+							href="#products"
 						>
-							products
+							Products
 						</Link>
 						<Link
-							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"/"}
+							className="text-gray-700 text-sm font-semibold uppercase hover:text-blue-900 transition"
+							href="https://www.youtube.com/@congtyJOYFUL"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							youtube
+							YouTube
 						</Link>
 						<Link
-							className="p-2 text-gray-300 text-sm transition duration-300 uppercase hover:text-blue-900"
-							href={"#contact"}
+							className="text-gray-700 text-sm font-semibold uppercase hover:text-blue-900 transition"
+							href="#contact"
 						>
-							contact
+							Contact
 						</Link>
 					</nav>
 				</div>

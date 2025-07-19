@@ -9,8 +9,8 @@ const ProductItem = ({
 	onClick: (event: React.MouseEvent<HTMLElement>) => void;
 }) => (
 	<>
-		<div className="group block cursor-pointer" onClick={onClick}>
-			<figure className="overflow-hidden h-[289px]">
+		<div className="group relative block cursor-pointer" onClick={onClick}>
+			<figure className="overflow-hidden h-full">
 				<Image
 					className="transition-transform w-full h-full object-cover duration-300 group-hover:scale-110"
 					src={product.images?.[0]?.src}

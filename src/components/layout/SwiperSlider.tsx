@@ -41,11 +41,8 @@ const sliders = [
 export default function SwiperSlider() {
 	return (
 		<Swiper
-			modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
-			spaceBetween={50}
+			modules={[Navigation, A11y, Autoplay, EffectFade]}
 			navigation
-			// pagination={{ clickable: false }}
-			// scrollbar={{ draggable: true }}
 			loop
 			autoplay={{ delay: 5000 }}
 			// onSwiper={(swiper) => console.log(swiper)}
@@ -55,7 +52,7 @@ export default function SwiperSlider() {
 			{sliders.map((slider, index) => (
 				<SwiperSlide key={index}>
 					<ScaleUp>
-						<figure className="w-full h-screen overflow-hidden">
+						<figure className="w-full lg:h-screen overflow-hidden">
 							<Image
 								src={slider.bg}
 								alt={slider.caption.title}
@@ -63,9 +60,9 @@ export default function SwiperSlider() {
 								className="w-full h-full object-cover"
 							/>
 							<figcaption className="absolute bottom-5 left-0 right-0 text-center">
-								<h1>{slider.caption.title != "" ? slider.caption.title : ""}</h1>
+								<h1>{slider.caption.title || ""}</h1>
 								<p>
-									{slider.caption.description != "" ? slider.caption.description : ""}
+									{slider.caption.description || slider.caption.description}
 								</p>
 							</figcaption>
 						</figure>

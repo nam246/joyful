@@ -9,7 +9,7 @@ import {
 
 export default function MobileFooter() {
 	return (
-		<div className="fixed flex items-center justify-between gap-5 bottom-0 left-0 z-50 px-10 py-3 w-full rounded-t-4xl bg-blue-900 text-white shadow-md lg:hidden md:hidden">
+		<div className="fixed flex items-center justify-between gap-5 bottom-0 left-0 z-50 px-10 py-3 w-full rounded-t-2xl bg-blue-900 text-white shadow-md lg:hidden md:hidden">
 			<Link
 				className="flex flex-col items-center"
 				target="_blank"

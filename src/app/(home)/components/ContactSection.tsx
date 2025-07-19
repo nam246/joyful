@@ -9,7 +9,7 @@ export default function ContactSection() {
 				<h1 className="uppercase text-7xl text-center mb-2 text-blue-900">
 					contact us
 				</h1>
-				<p className="mb-2 text-gray-500">
+				<p className="mb-2 text-center text-gray-500">
 					You are welcome to us for more details if any decor paper could interest
 					you. Please contact by contact below, and we will reply you soon.
 				</p>
