@@ -73,7 +73,7 @@ const GalleryItem = ({ src, name }: { src: string; name: string }) => (
 				height={500}
 			/>
 			<figcaption className="absolute top-2 left-2 text-white text-sm uppercase font-bold">
-				{name}
+				{/* {name} */}
 			</figcaption>
 		</figure>
 	</div>
