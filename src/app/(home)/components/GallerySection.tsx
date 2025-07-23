@@ -40,11 +40,11 @@ export default function GallerySection() {
 	return (
 		<FadeUp className="pt-5">
 			<SectionHeading title="gallery" />
-			<div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-rows-2 gap-5">
+			<div className="columns-2 gap-5">
 				{images.map((image, index) => (
 					<div
 						key={index}
-						className={`${index === 1 ? "col-span-2" : "col-span-1"}`}
+						className={`aspect-auto mb-5`}
 						onClick={() => handleClick(index)}
 					>
 						<GalleryItem src={image.src} name={image.name} />
@@ -64,7 +64,7 @@ export default function GallerySection() {
 
 const GalleryItem = ({ src, name }: { src: string; name: string }) => (
 	<div className="group block relative cursor-pointer">
-		<figure className="w-full h-full overflow-hidden">
+		<figure className="w-full h-full overflow-hidden rounded-md">
 			<Image
 				className="w-full group-hover:scale-102 transition-transform duration-300"
 				src={src}

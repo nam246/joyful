@@ -9,7 +9,7 @@ const ProductItem = ({
 	onClick: (event: React.MouseEvent<HTMLElement>) => void;
 }) => (
 	<>
-		<div className="group relative block cursor-pointer" onClick={onClick}>
+		<div className="group relative block cursor-pointer rounded-md overflow-hidden" onClick={onClick}>
 			<figure className="overflow-hidden h-full">
 				<Image
 					className="transition-transform w-full h-full object-cover duration-300 group-hover:scale-110"
