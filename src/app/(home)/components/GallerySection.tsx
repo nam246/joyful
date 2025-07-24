@@ -16,11 +16,14 @@ export type Gallery = {
 };
 
 const images: Gallery[] = [
-	{ src: "/product-categories/cat1.jpg", name: "PU", url: "/" },
-	{ src: "/product-categories/cat2.jpg", name: "NC", url: "/" },
-	{ src: "/product-categories/cat3.jpg", name: "Woodgrains PVC", url: "/" },
-	{ src: "/product-categories/cat4.jpg", name: "AMC", url: "/" },
-	{ src: "/product-categories/cat5.jpg", name: "Non-oil paper", url: "/" },
+	{ src: "/galleries/gallery1.jpg", name: "PU", url: "/" },
+	{ src: "/galleries/gallery2.jpg", name: "NC", url: "/" },
+	{ src: "/galleries/gallery3.jpg", name: "Woodgrains PVC", url: "/" },
+	{ src: "/galleries/gallery4.jpg", name: "AMC", url: "/" },
+	{ src: "/galleries/gallery5.jpg", name: "Non-oil paper", url: "/" },
+	{ src: "/galleries/gallery6.jpg", name: "Non-oil paper", url: "/" },
+	{ src: "/galleries/gallery7.jpg", name: "Non-oil paper", url: "/" },
+	{ src: "/galleries/gallery8.jpg", name: "Non-oil paper", url: "/" },
 ];
 
 export default function GallerySection() {
@@ -40,7 +43,7 @@ export default function GallerySection() {
 	return (
 		<FadeUp className="pt-5">
 			<SectionHeading title="gallery" />
-			<div className="columns-2 gap-5">
+			<div className="columns-2 gap-5 lg:columns-4 md:columns-3">
 				{images.map((image, index) => (
 					<div
 						key={index}
